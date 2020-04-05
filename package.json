@@ -1,0 +1,36 @@
+{
+  "name": "typescript-boilerplate",
+  "description": "Some basic boilerplate for using TypeScript and Jest",
+  "author": "Steve Kinney <hello@stevekinney.net>",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf coverage build tmp",
+    "build": "tsc -p tsconfig.release.json",
+    "build:watch": "tsc -w -p tsconfig.release.json",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "tslib": "~1.11.1"
+  },
+  "devDependencies": {
+    "@types/jest": "~25.2.1",
+    "@types/node": "~13.11.0",
+    "@typescript-eslint/eslint-plugin": "~2.26.0",
+    "@typescript-eslint/parser": "~2.26.0",
+    "eslint": "~6.8.0",
+    "eslint-config-prettier": "~6.10.1",
+    "eslint-plugin-jest": "~23.8.2",
+    "jest": "~25.2.7",
+    "prettier": "~2.0.2",
+    "rimraf": "~3.0.2",
+    "ts-jest": "~25.3.1",
+    "tsutils": "~3.17.1",
+    "typescript": "~3.8.3"
+  },
+  "engines": {
+    "node": ">= 12.13 <13"
+  }
+}
