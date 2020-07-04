@@ -5,8 +5,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "start": "parcel src/index.html",
     "clean": "rimraf coverage build tmp",
-    "build": "tsc -p tsconfig.release.json",
+    "build": "parcel build src/index.html",
     "build:watch": "tsc -w -p tsconfig.release.json",
     "lint": "eslint . --ext .ts,.tsx",
     "test": "jest --coverage",
@@ -24,8 +25,10 @@
     "eslint-config-prettier": "~6.11.0",
     "eslint-plugin-jest": "~23.17.1",
     "jest": "~26.1.0",
+    "parcel-bundler": "^1.12.4",
     "prettier": "~2.0.5",
     "rimraf": "~3.0.2",
+    "sass": "^1.26.9",
     "ts-jest": "~26.1.1",
     "tsutils": "~3.17.1",
     "typescript": "~3.9.6"
